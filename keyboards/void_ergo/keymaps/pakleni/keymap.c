@@ -1,4 +1,5 @@
 #include QMK_KEYBOARD_H
+#define TAPPING_TERM 45
 
 // Defines names for use in layer keycodes and the keymap
 enum layer_names {
@@ -51,10 +52,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                     KC_TRNS,  KC_TRNS,  KC_TRNS,    KC_TRNS,  KC_NO,                    KC_NO,      KC_TRNS,  KC_TRNS,    KC_TRNS,  KC_TRNS
     )
 };
-
-layer_state_t layer_state_set_user(layer_state_t state) {
-    return update_tri_layer_state(state, _LOWER, _RAISE, _ADJUST);
-}
 
 /*
  * ROTARY ENCODER

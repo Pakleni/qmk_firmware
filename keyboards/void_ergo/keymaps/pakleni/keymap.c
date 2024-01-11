@@ -1,12 +1,4 @@
 #include QMK_KEYBOARD_H
-#undef TAPPING_TERM
-#undef QUICK_TAP_TERM
-
-#define TAPPING_TERM 45
-#define QUICK_TAP_TERM 0
-#define RETRO_TAPPING
-#define PERMISSIVE_HOLD
-#define HOLD_ON_OTHER_KEY_PRESS
 
 // Defines names for use in layer keycodes and the keymap
 enum layer_names {

@@ -1,14 +1,13 @@
 #include QMK_KEYBOARD_H
 #undef TAPPING_TERM
 #undef QUICK_TAP_TERM
-#undef NO_USB_STARTUP_CHECK
-#undef USB_SUSPEND_WAKEUP_DELAY
 
 #define TAPPING_TERM 45
 #define QUICK_TAP_TERM 0
+
 #define RETRO_TAPPING
-#define NO_USB_STARTUP_CHECK
-#define USB_SUSPEND_WAKEUP_DELAY 500
+#define USE_SERIAL
+#define MASTER_LEFT
 
 // Defines names for use in layer keycodes and the keymap
 enum layer_names {

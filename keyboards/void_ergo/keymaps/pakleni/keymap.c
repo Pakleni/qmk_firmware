@@ -4,10 +4,9 @@
 
 #define TAPPING_TERM 45
 #define QUICK_TAP_TERM 0
-
 #define RETRO_TAPPING
-#define USE_SERIAL
-#define MASTER_LEFT
+#define PERMISSIVE_HOLD
+#define HOLD_ON_OTHER_KEY_PRESS
 
 // Defines names for use in layer keycodes and the keymap
 enum layer_names {

@@ -10,14 +10,19 @@
         "console": false,
         "extrakey": true,
         "mousekey": true,
-        "nkro": true
+        "nkro": true,
+        "rgb_matrix": true,
+        "via": true
+    },
+    "rgb_matrix": {
+        "driver": "is31fl3731"
     },
     "matrix_pins": {
         "cols": ["A5", "A6", "A7", "B0", "B1", "B2", "B10"],
         "rows": ["A0", "A1", "A2", "A3", "A4"]
     },
     "processor": "STM32F303",
-    "url": "",
+    "url": "https://github.com/pakleni/kingslayer-28-custom-gaming-keypad",
     "usb": {
         "device_version": "1.0.0",
         "pid": "0x0000",

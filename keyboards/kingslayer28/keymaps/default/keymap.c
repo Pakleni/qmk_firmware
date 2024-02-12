@@ -4,6 +4,17 @@
 #include QMK_KEYBOARD_H
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
+// ┌───┬───┬───┬───┬───┬───┬───┐
+// │ESC│1  │2  │3  │4  │5  │6  │
+// ├───┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴───┘
+// │TAB  │Q  │W  │E  │R  │
+// ├─────┴┬──┴┬──┴┬──┴┬──┴┐
+// │CAPS│ │A  │S  │D  │F  │
+// ├────┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┐
+// │SHFT│>< │Z  │X  │C  │V  │
+// ├───┬┴──┬┴──┬┴──┬┴───┴──┐┘
+// │CTL│GUI│FN │ALT│       │
+// └───┴───┴───┴───┴───────┘
 	LAYOUT_5_7(
 		KC_ESC, KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, 
 		KC_TAB, KC_Q, KC_W, KC_E, KC_R, 

@@ -3,6 +3,7 @@
 
 #pragma once
 
+#ifdef RGB_MATRIX_ENABLE
 #define I2C1_SCL_PIN B8
 #define I2C1_SDA_PIN B9
 
@@ -18,3 +19,4 @@
 
 // RGB Effects
 #define ENABLE_RGB_MATRIX_BREATHING
+#endif

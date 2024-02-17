@@ -11,9 +11,13 @@
         "extrakey": true,
         "mousekey": true,
         "nkro": true,
-        "rgb_matrix": true
+        "rgb_matrix": false,
+        "led_matrix": false
     },
     "rgb_matrix": {
+        "driver": "is31fl3731"
+    },
+    "led_matrix": {
         "driver": "is31fl3731"
     },
     "matrix_pins": {

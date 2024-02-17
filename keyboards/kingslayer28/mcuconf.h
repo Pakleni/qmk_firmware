@@ -6,3 +6,8 @@
 #    undef STM32_I2C_USE_I2C1
 #    define STM32_I2C_USE_I2C1 TRUE
 #endif
+
+#ifdef LED_MATRIX_ENABLE
+#    undef STM32_I2C_USE_I2C1
+#    define STM32_I2C_USE_I2C1 TRUE
+#endif

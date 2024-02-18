@@ -34,3 +34,25 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, 
 		KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS),
 };
+
+// THIS IS TESTING CODE
+#ifdef RGB_MATRIX_ENABLE
+bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
+    for (uint8_t i = led_min; i < led_max; i++) {
+        switch(get_highest_layer(layer_state|default_layer_state)) {
+            case 0:
+                rgb_matrix_set_color(i, RGB_RED);
+                break;
+            case 1:
+                rgb_matrix_set_color(i, RGB_GREEN);
+                break;
+            case 2:
+                rgb_matrix_set_color(i, RGB_BLUE);
+                break;
+            default:
+                break;
+        }
+    }
+    return false;
+}
+#endif

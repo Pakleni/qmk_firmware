@@ -24,3 +24,5 @@
 // #define HOLD_ON_OTHER_KEY_PRESS
 #define USE_SERIAL
 #define MASTER_LEFT
+
+#define USB_POLLING_INTERVAL_MS 1

@@ -3,6 +3,8 @@
 
 #pragma once
 
+#define USB_POLLING_INTERVAL_MS 1
+
 #ifdef RGB_MATRIX_ENABLE
 #define I2C1_SCL_PIN B8
 #define I2C1_SDA_PIN B9
